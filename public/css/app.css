@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: #3ab09e;
+  padding: 10px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .header-left img {
+  width: 60px;
+  height: 60px;
+}
+
+header .header-left h1 {
+  display: inline-block;
+  color: #5072a7;
+  margin-left: 20px;
+}
+
+header .header-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header .header-right ul {
+  list-style-type: none;
+}
+
+header .header-right ul li {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #5072a7;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #add8e6;
+}
+
+main .main-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+main .main-project img {
+  margin-top: 20px;
+}
+
+main .main-project h2 {
+  color: #5072a7;
+  font-size: 50px;
+}
+
+main .main-project p {
+  color: #3ab09e;
+  font-size: 20px;
+  padding: 20px 300px;
+}
+
+main .main-project a {
+  font-size: 20px;
+}
+
+main .main-project a:hover {
+  color: #3ab09e;
+}
+
