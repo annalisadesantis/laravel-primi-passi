@@ -15,22 +15,17 @@
             <div class="container">
                 <div class="header-left">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Canva_Logo.png" alt="">
-                    <h1>Scopri su Canva</h1>
+                    <h1>
+                        {{ $title_header }}
+                    </h1>
                 </div>
                 <div class="header-right">
                     <ul>
-                        <li>
-                            Home
-                        </li>
-                        <li>
-                            About
-                        </li>
-                        <li>
-                            Template
-                        </li>
-                        <li>
-                            Contact
-                        </li>
+                        @foreach ($menu as $voci)
+                            <li>
+                                {{ $voci }}
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -39,12 +34,14 @@
         <main>
             <div class="main-project">
                 <h2>
-                    Canva. La progettazione accessibile a tutti.
+                    {{ $title_main }}
                 </h2>
                 <p>
-                    Crea con modelli personalizzati e progetta insieme al tuo team. Condividi i progetti ovunque ti trovi e stampali in qualità professionale in qualsiasi momento.
+                    {{ $paragrafo }}
                 </p>
-                <a href="{{ route("benvenuto")}}">Clicca qui per un saluto</a>
+                <a href="{{ route("benvenuto")}}">
+                    {{ $link_home }}
+                </a>
             </div>
         </main>
     </body>

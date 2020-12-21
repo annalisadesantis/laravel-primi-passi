@@ -12,7 +12,9 @@
     <body class="welcome-page">
         <main>
             <div class="main-project">
-                <h2>Benvenuto sulla nostra pagina :)</h1>
+                <h2>
+                    {{ $title }}
+                </h1>
                 <img src="https://cimolais.it/wp-content/uploads/coriandoli-carnevale.jpg" alt="">
             </div>
         </main>

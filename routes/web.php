@@ -14,9 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        "menu" => ["Home", "About", "Template", "Contact"],
+        "title_header" => "Scopri su Canva",
+        "title_main" => "Canva. La progettazione accessibile a tutti.",
+        "paragrafo" => "Crea con modelli personalizzati e progetta insieme al tuo team. Condividi i progetti ovunque ti trovi e stampali in qualità professionale in qualsiasi momento.",
+        "link_home" => "Clicca qui per un saluto"
+    ];
+    return view('home', $data);
 });
 
 Route::get('/welcome', function () {
-    return view('benvenuto');
+    $data = [
+        "title" => "Benvenuto sulla nostra pagina :)"
+    ];
+    return view('benvenuto', $data);
 })->name("benvenuto");
